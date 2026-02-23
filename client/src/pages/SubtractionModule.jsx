@@ -57,7 +57,7 @@ const SubtractionModule = () => {
 
     const handleSuccess = () => {
         setFeedback({ visible: true, correct: true });
-        if (userId) axios.post('http://localhost:5000/api/math/subtraction', { userId, score: 1, totalQuestions: 1, timeTaken: 15 });
+        if (userId) axios.post('https://neuromath-backend.onrender.com/api/math/subtraction', { userId, score: 1, totalQuestions: 1, timeTaken: 15 });
 
         setTimeout(() => {
             setFeedback({ visible: false, correct: false });

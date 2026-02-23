@@ -42,7 +42,7 @@ const OddEvenModule = () => {
 
     const handleSuccess = () => {
         setFeedback({ visible: true, correct: true });
-        if (userId) axios.post('http://localhost:5000/api/math/odd-even', { userId, score: 1, totalQuestions: 1, timeTaken: 10 });
+        if (userId) axios.post('https://neuromath-backend.onrender.com/api/math/odd-even', { userId, score: 1, totalQuestions: 1, timeTaken: 10 });
 
         setTimeout(() => {
             setFeedback({ visible: false, correct: false });

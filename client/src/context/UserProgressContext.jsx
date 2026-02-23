@@ -18,7 +18,7 @@ export const UserProgressProvider = ({ children }) => {
 
     const login = async (username) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/reports/user', { username });
+            const res = await axios.post('https://neuromath-backend.onrender.com/api/reports/user', { username });
             const userData = res.data.data;
             setUserId(userData._id);
             setUser(userData);

@@ -29,7 +29,7 @@ const ParentDashboard = () => {
         }
 
         try {
-            const res = await axios.get(`http://localhost:5000/api/reports/${targetId}`);
+            const res = await axios.get(`https://neuromath-backend.onrender.com/api/reports/${targetId}`);
             setReportData(res.data.data);
         } catch (err) {
             console.error(err);

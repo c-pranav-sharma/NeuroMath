@@ -97,7 +97,7 @@ const AdditionModule = () => {
 
     const handleSuccess = () => {
         setFeedback({ visible: true, correct: true });
-        if (userId) axios.post('http://localhost:5000/api/math/addition', { userId, score: 1, totalQuestions: 1, timeTaken: 10 });
+        if (userId) axios.post('https://neuromath-backend.onrender.com/api/math/addition', { userId, score: 1, totalQuestions: 1, timeTaken: 10 });
 
         // Play success sound if available
         // const audio = new Audio('/sounds/success.mp3');
